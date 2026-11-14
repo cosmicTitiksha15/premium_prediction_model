@@ -7,12 +7,22 @@ This project was built with the aim to learn FastAPI and to learn to integrate M
 
 Make sure your project directory contains the following files:
 ```text
-fast-api/
+premium_prediction_model/
 │
-├── app.py              # FastAPI backend
-├── frontend.py         # Streamlit frontend UI
-├── model.pkl           # Trained scikit-learn model pipeline
-└── requirements.txt    # Project dependencies
+├── myenv/                  # Virtual environment
+├── config/                 # Configuration modules
+│   └── city_tier.py        # City tier mapping/configuration
+├── model/                  # Model files and logic
+│   ├── model.pkl           # Trained scikit-learn model pipeline
+│   └── predict.py          # Prediction script/logic
+├── schema/                 # Pydantic data validation schemas
+│   ├── prediction_response.py
+│   └── user_input.py
+│
+├── app.py                  # FastAPI backend server
+├── frontend.py             # Streamlit frontend UI
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
 ```
 
 ## 🚀 Setup & Installation Guide
